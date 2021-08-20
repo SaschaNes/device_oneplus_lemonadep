@@ -25,11 +25,11 @@ $(call inherit-product, device/oneplus/lemonadep/device.mk)
 # Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := OFFICIAL
+EVO_BUILD_TYPE := UNOFFICIAL
 EXTRA_FOD_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1440
 
-PRODUCT_NAME := evolution_lemonadep
+PRODUCT_NAME := dot_lemonadep
 PRODUCT_DEVICE := lemonadep
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -39,4 +39,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus9Pro \
-    PRODUCT_NAME=OnePlus9Pro_EEA
+    PRODUCT_NAME=OnePlus9Pro_EEA \
+    BUILD_FINGERPRINT := OnePlus/OnePlus9Pro_EEA/OnePlus9Pro:11/RKQ1.201105.002/2106092114:user/release-keys
