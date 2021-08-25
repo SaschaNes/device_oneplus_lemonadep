@@ -25,7 +25,12 @@ $(call inherit-product, device/oneplus/lemonadep/device.mk)
 # Inherit some common Evolution X stuff.
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := UNOFFICIAL
+# DotOS Official
+DOT_OFFICIAL := false
+
+WITH_GAPPS := true
+TARGET_SUPPORTS_BLUR := true
+
 EXTRA_FOD_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1440
 
